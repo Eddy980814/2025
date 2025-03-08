@@ -1,12 +1,12 @@
 // 設定內部人員帳號密碼
 const staffAccounts = [
-    { id: "980815", password: "980814" },
+    { id: "1", password: "1" },
     { id: "staff1", password: "abcdef" }
 ];
 
 // 用戶資料（JSON 模擬）
 const users = [
-    { id: "ECX", name: "吳奕辰", phone: "0912345678", balance: 5000 },
+    { id: "1001", name: "張三", phone: "0912345678", balance: 5000 },
     { id: "1002", name: "李四", phone: "0987654321", balance: 2000 },
     { id: "1003", name: "王五", phone: "0977111222", balance: 3000 }
 ];
@@ -36,6 +36,7 @@ function searchUser() {
 
     if (user) {
         userResult.innerHTML = `
+            <h3>用戶資料</h3>
             <p><strong>用戶 ID:</strong> ${user.id}</p>
             <p><strong>姓名:</strong> ${user.name}</p>
             <p><strong>電話:</strong> ${user.phone}</p>
